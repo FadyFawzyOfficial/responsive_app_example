@@ -6,6 +6,7 @@ class ScreenHeader extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Stack(
+      alignment: Alignment.center,
       children: [
         Image(
           width: 800,
