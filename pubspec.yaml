@@ -1,5 +1,5 @@
 name: responsive_app_example
-description: A new Flutter project.
+description: A Responsive Flutter App Example
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
@@ -34,7 +34,9 @@ dependencies:
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
-  cupertino_icons: ^1.0.2
+  # Fady Fawzy Comment: Flutter Version is 3.13.1
+  # Email: FadyFawzy.Official@gmail.com
+  cupertino_icons: ^1.0.5
 
 dev_dependencies:
   flutter_test:

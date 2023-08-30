@@ -1,16 +1,15 @@
 # responsive_app_example
 
-A new Flutter project.
+# Responsive App Example
 
-## Getting Started
+Responsive App Example as a Flutter Project.
 
-This project is a starting point for a Flutter application.
+Flutter version: 3.13.1
 
-A few resources to get you started if this is your first Flutter project:
+Created & Developed by:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Eng.Fady Fawzy
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Mobile Application Developer
+
+FadyFawzy.Official@gmail.com
