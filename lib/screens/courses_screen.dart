@@ -18,10 +18,25 @@ class CoursesScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
+        leading: ResponsiveVisibility(
+          hiddenWhen: const [Condition.largerThan(name: TABLET)],
+          child: IconButton(
+            icon: const Icon(Icons.menu_rounded),
+            onPressed: () {},
+          ),
+        ),
         title: const AppBarTitle(),
         actions: [
-          const MenuTextButton(label: 'Courses'),
-          const MenuTextButton(label: 'About'),
+          const ResponsiveVisibility(
+            visible: false,
+            visibleWhen: [Condition.largerThan(name: TABLET)],
+            child: MenuTextButton(label: 'Courses'),
+          ),
+          const ResponsiveVisibility(
+            visible: false,
+            visibleWhen: [Condition.largerThan(name: TABLET)],
+            child: MenuTextButton(label: 'About'),
+          ),
           IconButton(
             icon: const Icon(Icons.mark_email_unread_rounded),
             onPressed: () {},
