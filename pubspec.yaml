@@ -37,6 +37,10 @@ dependencies:
   # Fady Fawzy Comment: Flutter Version is 3.13.1
   # Email: FadyFawzy.Official@gmail.com
   cupertino_icons: ^1.0.5
+  # Easily make Flutter apps responsive.
+  # Automatically adapt UI to different screen sizes.
+  # Responsiveness made simple.
+  responsive_framework: ^0.2.0
 
 dev_dependencies:
   flutter_test:

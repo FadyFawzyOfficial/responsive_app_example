@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:responsive_framework/responsive_framework.dart';
 
 import 'screens/courses_screen.dart';
 
@@ -9,10 +10,19 @@ class ResponsiveApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Responsive App',
-      home: CoursesScreen(),
+      builder: (context, child) => ResponsiveWrapper.builder(
+        ClampingScrollWrapper.builder(context, child!),
+        breakpoints: const [
+          ResponsiveBreakpoint.resize(350, name: MOBILE),
+          ResponsiveBreakpoint.autoScale(600, name: TABLET),
+          ResponsiveBreakpoint.resize(800, name: DESKTOP),
+          ResponsiveBreakpoint.autoScale(1700, name: '4K'),
+        ],
+      ),
+      home: const CoursesScreen(),
     );
   }
 }
